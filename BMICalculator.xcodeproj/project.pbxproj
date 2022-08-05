@@ -11,6 +11,7 @@
 		6C3F17BB2899949500B59E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F17BA2899949500B59E49 /* ContentView.swift */; };
 		6C3F17BD2899949800B59E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F17BC2899949800B59E49 /* Assets.xcassets */; };
 		6C3F17C02899949800B59E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3F17BF2899949800B59E49 /* Preview Assets.xcassets */; };
+		6C3F17CD2899964200B59E49 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3F17CC2899964200B59E49 /* CalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6C3F17BA2899949500B59E49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C3F17BC2899949800B59E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3F17BF2899949800B59E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C3F17CC2899964200B59E49 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +53,7 @@
 		6C3F17B72899949500B59E49 /* BMICalculator */ = {
 			isa = PBXGroup;
 			children = (
-				6C3F17CB289994D200B59E49 /* Enums */,
-				6C3F17CA289994C400B59E49 /* Errors */,
-				6C3F17C9289994BD00B59E49 /* Services */,
 				6C3F17C8289994B800B59E49 /* Views */,
-				6C3F17C7289994B200B59E49 /* View Models */,
-				6C3F17C6289994AC00B59E49 /* Models */,
 				6C3F17B82899949500B59E49 /* BMICalculatorApp.swift */,
 				6C3F17BA2899949500B59E49 /* ContentView.swift */,
 				6C3F17BC2899949800B59E49 /* Assets.xcassets */,
@@ -73,46 +70,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6C3F17C6289994AC00B59E49 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		6C3F17C7289994B200B59E49 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
 		6C3F17C8289994B800B59E49 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6C3F17CC2899964200B59E49 /* CalculatorView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		6C3F17C9289994BD00B59E49 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		6C3F17CA289994C400B59E49 /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		6C3F17CB289994D200B59E49 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C3F17BB2899949500B59E49 /* ContentView.swift in Sources */,
+				6C3F17CD2899964200B59E49 /* CalculatorView.swift in Sources */,
 				6C3F17B92899949500B59E49 /* BMICalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
