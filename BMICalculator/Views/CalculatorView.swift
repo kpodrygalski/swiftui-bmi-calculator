@@ -28,7 +28,12 @@ struct CalculatorView: View {
             formView
         }
         .navigationTitle("BMI Calculator")
-        .alert(isPresented: $showAlert, content: getAlert) // THIS WILL BE DEPRECATED IN iOS 16
+        .alert(alertTitle, isPresented: $showAlert) {
+        } message: {
+            Text(alertMessage)
+        }
+
+        //.alert(isPresented: $showAlert, content: getAlert) // THIS WILL BE DEPRECATED IN iOS 16
     }
 }
 
@@ -83,6 +88,7 @@ extension CalculatorView {
     
     private func validateTextFields() -> Bool {
         if height.isEmpty || weight.isEmpty {
+            // Setup alert
             alertTitle = "Upssss 😞"
             alertMessage = "One of the field is not filled up! Please enter the correct data."
             showAlert.toggle()
@@ -92,8 +98,9 @@ extension CalculatorView {
         return true
     }
     
-    private func getAlert() -> Alert {
-        return Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .cancel())
-    }
+//    THIS WILL BE DEPRECATED IN iOS 16
+//    private func getAlert() -> Alert {
+//        return Alert(title: Text(alertTitle), message: Text(alertMessage), dismissButton: .cancel())
+//    }
     
 }
